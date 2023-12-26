@@ -3,7 +3,7 @@ import Colors from "../../constants/colors";
 
 function Title({children}) {
   return (
-    <Text style={styles.title}>Opponent's Guess</Text>
+    <Text style={styles.title}>{children}</Text>
   )
 }
 
@@ -11,9 +11,10 @@ export default Title;
 
 const styles = StyleSheet.create({
     title: {
+      fontFamily: 'open-sans-bold',
         marginTop: 24,
         fontSize: 24,
-        fontWeight: 'bold',
+        // fontWeight: 'bold',
         color: Colors.accent500,
         textAlign: 'center',
         borderWidth: 2,
