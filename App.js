@@ -11,7 +11,7 @@ import GameScreen from './screens/GameScreen';
 import GameOverScreen from './screens/GameOverScreen';
 
 export default function App() {
-  const [userNumber, setUserNumber] = useState();
+  const [userNumber, setUserNumber] = useState(null);
   const [gameIsOver, setGameIsOver] = useState();
   const [guessRounds, setGuessRounds] = useState(0);
 
